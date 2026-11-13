@@ -2,45 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nullset</title>
-<meta name="description" content="Nullset makes small, sharp games. Home of crawl., the snake game that fights back.">
-<style>
-  :root { --bg: #0D0D0D; --surface: #161616; --line: #2A2A2A; --ink: #F5F5F5; --muted: #A0A0A0; --amber: #F5A623; color-scheme: dark; }
-  * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.55; padding: 0 max(16px, env(safe-area-inset-left)) 48px max(16px, env(safe-area-inset-right)); }
-  main { max-width: 680px; margin: 0 auto; padding-top: 72px; display: flex; flex-direction: column; gap: 28px; }
-  .brand { color: var(--amber); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; }
-  h1 { font-size: 40px; margin: 6px 0 0; font-weight: 600; letter-spacing: -.01em; }
-  .lead { color: var(--muted); margin: 0; font-size: 17px; }
-  .game { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
-  .game h2 { margin: 0; font-size: 24px; font-weight: 600; }
-  .game p { margin: 0; color: #DADADA; }
-  .soon { display: inline-block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--bg); background: var(--amber); border-radius: 6px; padding: 3px 8px; align-self: flex-start; }
-  .links { display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; }
-  a { color: var(--amber); }
-  footer { color: var(--muted); font-size: 13px; }
-</style>
+<meta name="description" content="Nullset is an independent game studio from Hungary. We make small, sharp games for phones.">
+<meta name="theme-color" content="#F2F0EB">
+<meta property="og:title" content="Nullset">
+<meta property="og:description" content="An independent game studio. Small, sharp games for phones.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
-  <header>
-    <div class="brand">Nullset</div>
-    <h1>Small, sharp games.</h1>
+<div class="wrap">
+  <header class="top">
+    <span>Hungary</span>
+    <nav><a href="#work">Work</a><a href="mailto:nullset.studio@gmail.com">Contact</a></nav>
   </header>
-  <p class="lead">Nullset is an independent studio from Hungary.</p>
 
-  <section class="game">
-    <span class="soon">Coming soon to the App Store</span>
-    <h2>crawl.</h2>
-    <p>Snake that fights back. Eat, grow and survive while walls, fire, smoke, a rival snake and your own trail turn the board against you. Chain combos, keep a daily streak, and unlock 50+ skins and arenas.</p>
-    <div class="links">
-      <a href="/support/">Support</a>
-      <a href="/privacy/">Privacy policy</a>
-    </div>
+  <h1 class="wordmark">Nullset<span class="dot">.</span></h1>
+
+  <section class="intro">
+    <p>An independent game studio. We make small, sharp games for phones.</p>
+    <div class="side"><a href="mailto:nullset.studio@gmail.com">nullset.studio@gmail.com</a></div>
   </section>
 
-  <footer>Contact: <a href="mailto:nullset.studio@gmail.com">nullset.studio@gmail.com</a> · © 2026 Nullset</footer>
-</main>
+  <main id="work">
+    <p class="label">Work</p>
+    <table class="work">
+      <tr>
+        <td class="n">01</td>
+        <td class="icon"><img src="/img/crawl-icon.png" alt="crawl. app icon" width="52" height="52"></td>
+        <td class="name">crawl.</td>
+        <td class="desc">Snake that fights back.</td>
+        <td class="r"><span>iOS · Coming soon</span><a href="/support/">Support</a><a href="/privacy/">Privacy</a></td>
+      </tr>
+    </table>
+  </main>
+
+  <footer class="foot"><span>© 2026 Nullset</span><span>nullset.studio</span></footer>
+</div>
 </body>
 </html>
